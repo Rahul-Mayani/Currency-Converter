@@ -1,7 +1,7 @@
 # Currency-Converter
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/Rahul-Mayani/Currency-Converter/blob/master/LICENSE)
-[![Platform](https://img.shields.io/cocoapods/p/PagingTableView.svg?style=flat)](https://github.com/Rahul-Mayani/Currency-Converter/tree/master/Dog/)
+[![Platform](https://img.shields.io/cocoapods/p/PagingTableView.svg?style=flat)](https://github.com/Rahul-Mayani/Currency-Converter/tree/master/Currency/)
 [![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![iOS 12](https://img.shields.io/badge/iOS-12-orange.svg?style=flat)](https://developer.apple.com/ios/)
 
