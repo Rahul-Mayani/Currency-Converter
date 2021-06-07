@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CurrencyVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CurrencyVC" customModule="Currency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the amount here" textAlignment="right" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="qpT-xd-ykk" customClass="CurrencyTextField" customModule="Currency" customModuleProvider="target">
+                                <rect key="frame" x="30" y="74" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CSO-oH-fq0"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="USD" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HBk-Z6-1jy">
+                                <rect key="frame" x="322" y="128" width="62" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="226-FO-lzE"/>
+                                </connections>
+                            </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UoF-OW-nrw">
+                                <rect key="frame" x="20" y="192" width="374" height="660"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="12" minimumInteritemSpacing="12" id="1OR-hc-5fc">
+                                    <size key="itemSize" width="80" height="68"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExchangeRatesCell" id="kbd-kv-Wdu" customClass="ExchangeRatesCell" customModule="Currency" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="w6A-3z-Noz" customClass="AppShadowBGView" customModule="Currency" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="68"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sRG-2d-vSb">
+                                                    <rect key="frame" x="5" y="5" width="70" height="58"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avY-hH-bOV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="70" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eia-Q4-pus">
+                                                            <rect key="frame" x="0.0" y="18" width="70" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="sRG-2d-vSb" secondAttribute="trailing" constant="5" id="AIe-nf-jPP"/>
+                                                <constraint firstAttribute="bottom" secondItem="sRG-2d-vSb" secondAttribute="bottom" constant="5" id="BYQ-YU-i8w"/>
+                                                <constraint firstItem="sRG-2d-vSb" firstAttribute="top" secondItem="w6A-3z-Noz" secondAttribute="top" constant="5" id="XMm-Cl-OFL"/>
+                                                <constraint firstItem="sRG-2d-vSb" firstAttribute="leading" secondItem="w6A-3z-Noz" secondAttribute="leading" constant="5" id="dPA-wo-Obp"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="80" height="68"/>
+                                        <connections>
+                                            <outlet property="amountLabel" destination="Eia-Q4-pus" id="3ik-Xv-wnT"/>
+                                            <outlet property="currencyLabel" destination="avY-hH-bOV" id="DhP-Ur-a1G"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UoF-OW-nrw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4Nc-XD-Rx6"/>
+                            <constraint firstItem="qpT-xd-ykk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="9Cg-qW-oWm"/>
+                            <constraint firstItem="HBk-Z6-1jy" firstAttribute="trailing" secondItem="qpT-xd-ykk" secondAttribute="trailing" id="Lm4-G7-jsu"/>
+                            <constraint firstItem="HBk-Z6-1jy" firstAttribute="top" secondItem="qpT-xd-ykk" secondAttribute="bottom" constant="20" id="QmU-bD-ig9"/>
+                            <constraint firstItem="UoF-OW-nrw" firstAttribute="top" secondItem="HBk-Z6-1jy" secondAttribute="bottom" constant="30" id="THZ-y9-Za9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qpT-xd-ykk" secondAttribute="trailing" constant="30" id="V03-yn-wcI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UoF-OW-nrw" secondAttribute="bottom" constant="10" id="Ygl-dl-lJe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UoF-OW-nrw" secondAttribute="trailing" constant="20" id="a9k-an-jQc"/>
+                            <constraint firstItem="qpT-xd-ykk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="rPn-YK-rEL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountTextField" destination="qpT-xd-ykk" id="zqG-PR-gLg"/>
+                        <outlet property="currencyPickerTextField" destination="HBk-Z6-1jy" id="XRQ-R5-5tp"/>
+                        <outlet property="exchangeRatesCollectionView" destination="UoF-OW-nrw" id="0Tr-Mj-duZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194.20289855072465" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

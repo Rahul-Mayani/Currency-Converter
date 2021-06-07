@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",
+          "version": "5.4.3"
+        }
+      },
+      {
+        "package": "NVActivityIndicatorView",
+        "repositoryURL": "https://github.com/ninjaprox/NVActivityIndicatorView.git",
+        "state": {
+          "branch": null,
+          "revision": "bcb52371f2259254bac6690f92bb474a61768c47",
+          "version": "5.1.1"
+        }
+      },
+      {
+        "package": "RRAlamofireRxAPI",
+        "repositoryURL": "https://github.com/Rahul-Mayani/RRAlamofireRxAPI.git",
+        "state": {
+          "branch": null,
+          "revision": "04984c13d3c74a2a7048bc4329eaa8a0f5cf5b7a",
+          "version": "2.1.1"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "7c17a6ccca06b5c107cfa4284e634562ddaf5951",
+          "version": "6.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
