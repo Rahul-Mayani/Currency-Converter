@@ -16,7 +16,7 @@ Real time currency converter by API: `https://currencylayer.com`
 
 
 ## Example
-![alt text](https://github.com/Rahul-Mayani/Currency-Converter/blob/master/sample.gif)
+![alt text](https://github.com/Rahul-Mayani/Currency-Converter/blob/main/sample.gif)
 
 To run the project, clone the repo, and run pod install from the Currency-Converter directory first.
 
